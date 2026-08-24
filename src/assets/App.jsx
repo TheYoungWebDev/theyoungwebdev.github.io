@@ -6,6 +6,7 @@ import Contact from "./Contact";
 import Certs from "./Certificates";
 import Error from "./Error";
 import Toggle from "./toggle";
+import Footer from "./Footer";
 import "./theme.css";
 import "./App.css";
 
@@ -13,10 +14,12 @@ const NavigationBar = ({ darkMode, setDarkMode }) => {
   return (
     <>
     <nav aria-label="Main navigation">
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
-      <Link to="/contact">Contact</Link>
-      <Link to="/certificates">Certificates</Link>
+      <div className="nav-links">
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/contact">Contact</Link>
+        <Link to="/certificates">Certificates</Link>
+      </div>
       <Toggle darkMode={darkMode} setDarkMode={setDarkMode} />
     </nav>
     </>
@@ -27,7 +30,7 @@ const App = () => {
   const [darkMode, setDarkMode] = useState(false);
 
   return (
-    <div className={darkMode ? "dark" : "light"}>
+    <div className={`app-shell ${darkMode ? "dark" : "light"}`}>
       <BrowserRouter>
         <NavigationBar darkMode={darkMode} setDarkMode={setDarkMode} />
       <main className="page-content">
@@ -39,6 +42,7 @@ const App = () => {
           <Route path="*" element={<Error />} />
         </Routes>
       </main>
+      <Footer />
       </BrowserRouter>
     </div>
   );

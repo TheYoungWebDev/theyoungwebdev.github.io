@@ -7,17 +7,17 @@
   min-height: 100vh;
   overflow-x: hidden;
 }
-.about-page p {
+.about-page .timeline p {
   font-family: "Courier New", monospace;
   color: chartreuse;
 }
 
-.about-page h1,
-.about-page h2,
-.about-page h3,
-.about-page h4,
-.about-page h5,
-.about-page h6 {
+.about-page .timeline h1,
+.about-page .timeline h2,
+.about-page .timeline h3,
+.about-page .timeline h4,
+.about-page .timeline h5,
+.about-page .timeline h6 {
   font-family: "Audiowide", sans-serif;
   color: #58ff55;
 }

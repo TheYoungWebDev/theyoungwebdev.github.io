@@ -1,8 +1,14 @@
 .footer {
+    width: 100%;
     background-color: rgb(23, 23, 23);
     color: aliceblue;
     padding: 12px;
     overflow: hidden;
+}
+
+.footer a {
+    display: inline-block;
+    vertical-align: top;
 }
 
 #thm {

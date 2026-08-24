@@ -1,9 +1,8 @@
-import Footer from "./Footer.jsx"
 const Home = () => {
   return (
       <div>
       <h1>Mohamad Hourani</h1>
-      <img src="goofiness.gif" alt="A goofy hacker" />
+    <img className="page-image" src="goofiness.gif" alt="A goofy hacker" />
       <p>Hello, my name is Mohamad Hourani, and I am a beginner/intermediate ethical hacker.</p>
       <hr/>
       <h2>Skills</h2>
@@ -145,7 +144,6 @@ const Home = () => {
         <p>This was one of my hardest projects yet. I needed some help with some complex math used in the project.</p>
         <a href="https://bgokq6.mimo.run/index.html">→ Link to project</a>
     </details>
-    <Footer />
     </div>
   );
 };

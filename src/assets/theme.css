@@ -1,6 +1,12 @@
+html {
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   min-width: 0;
+  width: 100%;
   overflow-x: hidden;
 }
 
@@ -12,6 +18,10 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+#root {
+  width: 100%;
 }
 
 .light,
@@ -28,6 +38,11 @@ img {
 .dark {
   background-color: #101318;
   color: #5da33b;
+}
+
+.dark,
+.light {
+  width: 100%;
 }
 
 .dark a {

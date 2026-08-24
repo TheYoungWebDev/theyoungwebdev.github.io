@@ -1,5 +1,4 @@
 import "./About.css";
-import Footer from "./Footer.jsx";
 const About = () => {
     return (
         <div className="about-page">
@@ -42,7 +41,6 @@ const About = () => {
         </div>
 </div>
 <p style={{color: "blue"}}>And I'm continuing my journey!</p>
-<Footer />
     </div>
     )
 }
