@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+.about-page {
+  min-height: 100vh;
+}
+.about-page p {
+  font-family: "Courier New", monospace;
+  color: chartreuse;
+}
+
+.about-page h1,
+.about-page h2,
+.about-page h3,
+.about-page h4,
+.about-page h5,
+.about-page h6 {
+  font-family: "Audiowide", sans-serif;
+  color: #58ff55;
+}
+
+.about-page .timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-page .timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: rgb(63, 58, 58);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.about-page .container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.about-page .container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: rgb(0, 0, 0);
+  border: 4px solid #58ff55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.about-page .left {
+  left: 0;
+}
+
+.about-page .right {
+  left: 50%;
+}
+
+.about-page .left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid black;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent black;
+}
+
+.about-page .right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid black;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent black transparent transparent;
+}
+
+.about-page .right::after {
+  left: -16px;
+}
+
+.about-page .content {
+  padding: 20px 30px;
+  background-color: rgb(57, 52, 52);
+  position: relative;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 600px) {
+  .about-page .timeline::after {
+    left: 31px;
+}
+
+  .about-page .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  .about-page .container::before {
+    left: 60px;
+    border: medium solid rgb(17, 16, 16);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent black transparent transparent;
+  }
+
+  .about-page .left::after, .about-page .right::after {
+    left: 15px;
+  }
+
+  .about-page .right {
+    left: 0%;
+  }
+}

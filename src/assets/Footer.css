@@ -1,0 +1,22 @@
+.footer {
+    background-color: rgb(23, 23, 23);
+    color: aliceblue;
+    padding: 12px;
+    overflow: hidden;
+}
+
+#thm {
+    display: block;
+    float: left;
+    width: 100px;
+    border-radius: 12px;
+    margin-right: 12px;
+}
+
+#github {
+    display: block;
+    float: left;
+    width: 100px;
+    border-radius: 12px;
+    margin-right: 11px;
+}

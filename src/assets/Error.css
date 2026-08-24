@@ -1,0 +1,14 @@
+#error {
+  margin: 0;
+  font-size: 404px;
+  line-height: 1;
+  color: darkgreen;
+}
+body {
+  margin: 0;
+  text-align: center;
+}
+
+body p {
+  margin-bottom: 0;
+}

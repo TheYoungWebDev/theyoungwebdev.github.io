@@ -1,0 +1,20 @@
+.certificates {
+  display: flex;
+  flex-wrap: wrap; /* allows wrapping to new lines */
+  gap: 20px;       /* spacing between certificates */
+  justify-content: center; /* center them horizontally */
+}
+
+.certificate {
+  flex: 1 1 200px; /* grow/shrink, minimum width */
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+  .certificate img {
+  max-width: 100%;   /* keeps it responsive */
+  height: auto;      /* maintains aspect ratio */
+  width: 250px;      /* set a fixed width */
+  border-radius: 6px; /* optional: rounded corners */
+  box-shadow: 0 9px 13px rgba(0,0,0,0.5); /* optional: subtle shadow */
+}
