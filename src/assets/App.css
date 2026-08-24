@@ -18,7 +18,7 @@ nav {
 }
 
 .page-content {
-  width: min(100% - 2rem, 1200px);
+  width: min(calc(100% - 2rem), 1200px);
   margin: 0 auto;
   overflow-wrap: anywhere;
 }
@@ -30,6 +30,6 @@ nav {
   }
 
   .page-content {
-    width: min(100% - 1.25rem, 1200px);
+    width: min(calc(100% - 1.25rem), 1200px);
   }
 }

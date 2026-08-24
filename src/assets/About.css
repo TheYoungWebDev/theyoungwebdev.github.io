@@ -5,6 +5,7 @@
 
 .about-page {
   min-height: 100vh;
+  overflow-x: hidden;
 }
 .about-page p {
   font-family: "Courier New", monospace;
