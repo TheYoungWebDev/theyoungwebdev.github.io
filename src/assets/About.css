@@ -101,6 +101,7 @@
   background-color: rgb(57, 52, 52);
   position: relative;
   border-radius: 6px;
+  overflow-wrap: anywhere;
 }
 
 @media screen and (max-width: 600px) {
@@ -111,7 +112,7 @@
   .about-page .container {
     width: 100%;
     padding-left: 70px;
-    padding-right: 25px;
+    padding-right: 10px;
   }
   .about-page .container::before {
     left: 60px;
@@ -126,5 +127,9 @@
 
   .about-page .right {
     left: 0%;
+  }
+
+  .about-page .content {
+    padding: 16px;
   }
 }

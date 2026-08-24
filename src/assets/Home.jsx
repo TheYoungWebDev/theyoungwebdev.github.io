@@ -10,21 +10,21 @@ const Home = () => {
       <h2>Skills</h2>
 
       <details>
-        <summary><div class="skill-item"><label for="ETH"><abbr title="Gaining unauthorized access to software for ethical purposes.">Ethical Hacking</abbr><br/>65% </label><progress id="ETH" value="65" max="100"></progress></div><br/></summary>
-        <div class="skill-item"><label for="FS"><abbr title="Foundational hacking skills, such as networking and how systems work.">Foundational Skills</abbr><br/>100% </label><progress id="FS" value="100"></progress></div><br/>
-        <div class="skill-item"><label for="RT"><abbr title="Red teaming is an attacking surface. This includes pentesting and testing systems for vulnerabilities.">Red Teaming</abbr><br/>30% </label><progress id="RT" value="30" max="100"></progress></div><br/>
-        <div class="skill-item"><label for="BT"><abbr title="Blue teaming is a defensive surface. This includes defending outdated systems or patching vulnerabilities.">Blue Teaming</abbr><br/>10% </label><progress id="BT" value="10" max="100"></progress></div><br/>
-        <div class="skill-item"><label for="PT"><abbr title="Penetration Testing is where you test software for critical security flaws/vulnerabilities.">Pentesting</abbr><br/>20% </label><progress id="PT" value="20" max="100"></progress></div><br/>
+        <summary><div className="skill-item"><label htmlFor="ETH"><abbr title="Gaining unauthorized access to software for ethical purposes.">Ethical Hacking</abbr><br/>65% </label><progress id="ETH" value="65" max="100"></progress></div><br/></summary>
+        <div className="skill-item"><label htmlFor="FS"><abbr title="Foundational hacking skills, such as networking and how systems work.">Foundational Skills</abbr><br/>100% </label><progress id="FS" value="100"></progress></div><br/>
+        <div className="skill-item"><label htmlFor="RT"><abbr title="Red teaming is an attacking surface. This includes pentesting and testing systems for vulnerabilities.">Red Teaming</abbr><br/>30% </label><progress id="RT" value="30" max="100"></progress></div><br/>
+        <div className="skill-item"><label htmlFor="BT"><abbr title="Blue teaming is a defensive surface. This includes defending outdated systems or patching vulnerabilities.">Blue Teaming</abbr><br/>10% </label><progress id="BT" value="10" max="100"></progress></div><br/>
+        <div className="skill-item"><label htmlFor="PT"><abbr title="Penetration Testing is where you test software for critical security flaws/vulnerabilities.">Pentesting</abbr><br/>20% </label><progress id="PT" value="20" max="100"></progress></div><br/>
       </details>
       <hr/>
-      <div class="skill-item"><label for="HTML"><abbr title="HyperText Markup Language, the standard language for websites.">HTML</abbr><br/>80% </label><progress id="HTML" value="80" max="100"></progress></div><br/>
-      <div class="skill-item"><label for="CSS"><abbr title="Cascading Style Sheets, used for describing the presentation of a document written in a markup language, like HTML.">CSS</abbr><br/>75% </label><progress id="CSS" value="75" max="100"></progress></div><br/>
-      <div class="skill-item"><label for="JS"><abbr title="Javascript, used to add functionality to a website.">JS</abbr><br/>50% </label><progress id="JS" value="50" max="100"></progress></div><br/>
-      <div class="skill-item"><label for="PY"><abbr title="Python, a very easy language for programs and systems, like Operating Systems and games.">Python</abbr><br/>60% </label><progress id="PY" value="60" max="100"></progress></div><br/>
-      <div class="skill-item"><label for="JSX"><abbr title="React, an enhanced way to create and render pages instead of reloading.">React</abbr><br/>60%</label><progress id="JSX" value="60" max="100"></progress></div><br/>
-      <div class="skill-item"><label for="NODE"><abbr title="Express, a back-end language used for servers. Think of it like a kitchen in a restaurant.">Node.js(Express)</abbr><br/>45% </label><progress id="NODE" value="45" max="100"></progress></div><br/>
-      <div class="skill-item"><label for="SQL"><abbr title="SQL, one of the best programming languages for databases and can also be used with Express.">SQL</abbr><br/>80% </label><progress id="SQL" value="80" max="100"></progress></div><br/>
-      <div class="skill-item"><label for="TS"><abbr title="TypeScript is an upgrade of JavaScript that adds static typing and type annotations. It helps developers catch errors easier.">TypeScript</abbr><br/>70% </label><progress id="TS" value="70" max="100"></progress></div><br/>
+    <div className="skill-item"><label htmlFor="HTML"><abbr title="HyperText Markup Language, the standard language for websites.">HTML</abbr><br/>80% </label><progress id="HTML" value="80" max="100"></progress></div><br/>
+    <div className="skill-item"><label htmlFor="CSS"><abbr title="Cascading Style Sheets, used for describing the presentation of a document written in a markup language, like HTML.">CSS</abbr><br/>75% </label><progress id="CSS" value="75" max="100"></progress></div><br/>
+    <div className="skill-item"><label htmlFor="JS"><abbr title="Javascript, used to add functionality to a website.">JS</abbr><br/>50% </label><progress id="JS" value="50" max="100"></progress></div><br/>
+    <div className="skill-item"><label htmlFor="PY"><abbr title="Python, a very easy language for programs and systems, like Operating Systems and games.">Python</abbr><br/>60% </label><progress id="PY" value="60" max="100"></progress></div><br/>
+    <div className="skill-item"><label htmlFor="JSX"><abbr title="React, an enhanced way to create and render pages instead of reloading.">React</abbr><br/>60%</label><progress id="JSX" value="60" max="100"></progress></div><br/>
+    <div className="skill-item"><label htmlFor="NODE"><abbr title="Express, a back-end language used for servers. Think of it like a kitchen in a restaurant.">Node.js(Express)</abbr><br/>45% </label><progress id="NODE" value="45" max="100"></progress></div><br/>
+    <div className="skill-item"><label htmlFor="SQL"><abbr title="SQL, one of the best programming languages for databases and can also be used with Express.">SQL</abbr><br/>80% </label><progress id="SQL" value="80" max="100"></progress></div><br/>
+    <div className="skill-item"><label htmlFor="TS"><abbr title="TypeScript is an upgrade of JavaScript that adds static typing and type annotations. It helps developers catch errors easier.">TypeScript</abbr><br/>70% </label><progress id="TS" value="70" max="100"></progress></div><br/>
       <hr/>
       <h2>Projects</h2>
       <p><strong>Note:</strong>Some of my projects contain my face, and I'm not comfortable to show it. Anyways, here are some of my projects!</p>
@@ -127,7 +127,8 @@ const Home = () => {
 
     <details>
         <summary>Wordle Game</summary>
-        <p>I won't spoil the word, but if you want a hint...<details><summary>Hint:</summary><p>This project uses...</p></details></p>
+        <p>I won't spoil the word, but if you want a hint...</p>
+        <details><summary>Hint:</summary><p>This project uses...</p></details>
     </details>
 
     <br />

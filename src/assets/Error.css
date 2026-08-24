@@ -1,6 +1,6 @@
 #error {
   margin: 0;
-  font-size: 404px;
+  font-size: clamp(8rem, 35vw, 25rem);
   line-height: 1;
   color: darkgreen;
 }

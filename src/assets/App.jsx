@@ -12,11 +12,11 @@ import "./App.css";
 const NavigationBar = ({ darkMode, setDarkMode }) => {
   return (
     <>
-    <nav>
+    <nav aria-label="Main navigation">
       <Link to="/">Home</Link>
       <Link to="/about">About</Link>
       <Link to="/contact">Contact</Link>
-      <Link to="/certificates">Certificates</Link><br/>
+      <Link to="/certificates">Certificates</Link>
       <Toggle darkMode={darkMode} setDarkMode={setDarkMode} />
     </nav>
     </>
@@ -30,13 +30,15 @@ const App = () => {
     <div className={darkMode ? "dark" : "light"}>
       <BrowserRouter>
         <NavigationBar darkMode={darkMode} setDarkMode={setDarkMode} />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/certificates" element={<Certs />} />
-        <Route path="*" element={<Error />} />
-      </Routes>
+      <main className="page-content">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/certificates" element={<Certs />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
+      </main>
       </BrowserRouter>
     </div>
   );
