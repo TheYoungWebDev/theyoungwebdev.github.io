@@ -3,7 +3,7 @@ const Footer = () => {
   return (
     <>
     <footer className="footer">
-        <a href="https://tryhackme.com/p/yarudake">
+        <a href="https://tryhackme.com/p/hoog">
             <img src="THM.png" width="100" alt="TryHackMe" id="thm"/>
         </a>
         <a href="https://github.com/TheYoungWebDev">
